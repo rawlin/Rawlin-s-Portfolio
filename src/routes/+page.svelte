@@ -7,8 +7,8 @@
 <div class="container">
     <p>Hey, I'm Rawlin. I specialize in crafting user interfaces, interactions, and animations for mobile and web applications.</p>
     <div class="container-reactions">
-        <Redirect redirectName="LinkedIn" redirectLink="https://www.google.com" />
-        <Redirect redirectName="Github" redirectLink="https://www.google.com" />
+        <Redirect redirectName="LinkedIn" redirectLink="https://www.linkedin.com/in/rawlin-crasto/" />
+        <Redirect redirectName="Github" redirectLink="https://github.com/rawlin" />
     </div>
     <SeeMore class="see`"/>
 </div>

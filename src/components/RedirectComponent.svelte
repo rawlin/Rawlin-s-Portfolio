@@ -7,8 +7,10 @@
     }
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="container" on:click={handleClick}>
-	<p>{redirectName}</p>
+	<p class="name">{redirectName}</p>
 	<svg class="icon"
 		xmlns="http://www.w3.org/2000/svg"
 		width="1em"
@@ -17,7 +19,7 @@
 		{...$$props}
 	>
 		<path
-			fill="currentColor"
+			fill="currentColor" 
 			d="m16 8.4l-8.9 8.9q-.275.275-.7.275t-.7-.275q-.275-.275-.275-.7t.275-.7L14.6 7H7q-.425 0-.712-.288T6 6q0-.425.288-.712T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.712-.288T16 16z"
 		/>
 	</svg>
@@ -28,6 +30,11 @@
 		display: flex;
 		align-items: center;
 		cursor: pointer;
+		color: #f2f2f299; /* Set default color */
+	}
+
+	.container:hover {
+		color: white; /* Change color on hover */
 	}
 
 	.icon {
@@ -38,11 +45,4 @@
 	.container:hover .icon {
 		transform: translate(0.2em, -0.2em);
 	}
-
-    .container.fill-div {
-        display: block;
-        height: 100%;
-        width: 100%;
-        text-decoration: none;
-    }
 </style>
